@@ -17,5 +17,6 @@ class Foo
     public function error(\Throwable $throwable) : void
     {
         $this->logger->debug('foo', ['exception' => $throwable]);
+        $this->logger->debug('foo', ['exception' => 'bar']);
     }
 }

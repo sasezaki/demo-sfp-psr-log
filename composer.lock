@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21d7a897a0b945664a315652d31a47a8",
+    "content-hash": "4f23d4a54583e07cc52e6bdff3f41c02",
     "packages": [
         {
             "name": "psr/log",
@@ -886,34 +886,27 @@
         },
         {
             "name": "struggle-for-php/sfp-phpstan-psr-log",
-            "version": "0.1.3",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/struggle-for-php/sfp-phpstan-psr-log.git",
-                "reference": "f71344d928b791e5c1fcc3e3dc969e4b2e745fce"
+                "reference": "f762e72565b61d3b8fd6a2aff82f7dc0e56ee838"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/struggle-for-php/sfp-phpstan-psr-log/zipball/f71344d928b791e5c1fcc3e3dc969e4b2e745fce",
-                "reference": "f71344d928b791e5c1fcc3e3dc969e4b2e745fce",
+                "url": "https://api.github.com/repos/struggle-for-php/sfp-phpstan-psr-log/zipball/f762e72565b61d3b8fd6a2aff82f7dc0e56ee838",
+                "reference": "f762e72565b61d3b8fd6a2aff82f7dc0e56ee838",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0",
-                "phpstan/phpstan": "^0.12"
+                "phpstan/phpstan": "^0.12.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.1",
                 "roave/security-advisories": "dev-master"
             },
             "type": "phpstan-extension",
-            "extra": {
-                "phpstan": {
-                    "includes": [
-                        "extension.neon"
-                    ]
-                }
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -924,7 +917,7 @@
                 "PSR3",
                 "psr-3"
             ],
-            "time": "2020-03-15T01:07:00+00:00"
+            "time": "2020-04-29T05:14:20+00:00"
         },
         {
             "name": "struggle-for-php/sfp-psalm-psr-log-plugin",
