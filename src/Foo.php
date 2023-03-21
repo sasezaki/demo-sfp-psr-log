@@ -16,6 +16,11 @@ class Foo
 
     public function error(\Throwable $throwable) : void
     {
-        $this->logger->debug('foo', ['exception' => $throwable]);
+        // invalid
+        $this->logger->debug('foo', ['exception' => $throwable->getMessage()]);
+        $this->logger->log('panic', 'foo', ['exception' => $throwable]);
+
+        // valid
+        $this->logger->log('info', 'foo', ['exception' => $throwable]);
     }
 }
