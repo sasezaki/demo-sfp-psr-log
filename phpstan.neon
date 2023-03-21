@@ -1,2 +1,3 @@
 includes:
 	- vendor/struggle-for-php/sfp-phpstan-psr-log/extension.neon
+	- vendor/struggle-for-php/sfp-phpstan-psr-log/rules.neon

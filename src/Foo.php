@@ -14,7 +14,7 @@ class Foo
         $this->logger = $logger;
     }
 
-    public function error(\Throwable $throwable) : void
+    public function exceptionKeyOnlyAllowThrowable(\Throwable $throwable) : void
     {
         // invalid
         $this->logger->debug('foo', ['exception' => $throwable->getMessage()]);
@@ -22,5 +22,11 @@ class Foo
 
         // valid
         $this->logger->log('info', 'foo', ['exception' => $throwable]);
+    }
+
+    public function mustIncludesCurrentScopeThrowableIntoContext(\Throwable $throwable)
+    {
+        // Parameter $context of logger method Psr\Log\LoggerInterface::info() requires 'exception' key. Current scope has Throwable variable - $throwable
+        $this->logger->info('foo');
     }
 }
